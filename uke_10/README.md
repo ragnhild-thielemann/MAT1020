@@ -64,10 +64,10 @@ Dersom vi bruker de numeriske verdiene fra oppgaven (og får chat til å gjøre 
 $$ Var(r) = 8.5 r^2 - 1.9 r + 0.115 $$
 
 
-I scriptet [oppgave_1.py] (https://github.com/ragnhild-thielemann/MAT1020/blob/main/uke_10/oppgave_1.py) plotter jeg matrisemultiplikasjonen for hver optimal **w** for å finne variansen ved den gitte inverseringen, mot den analytiske løsningen til Chat. 
+I scriptet ([oppgave_1.py] (https://github.com/ragnhild-thielemann/MAT1020/blob/main/uke_10/oppgave_1.py))plotter jeg matrisemultiplikasjonen for hver optimal **w** for å finne variansen ved den gitte inverseringen, mot den analytiske løsningen til Chat. 
 
 
 Dersom vi plotter disse mot hverandre, får vi følgene plott: 
 
-![haha](https://github.com/ragnhild-thielemann/MAT1020/tree/main/images/plott_mot_hverandre.png)
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/plott_mot_hveradnre.png)
 
