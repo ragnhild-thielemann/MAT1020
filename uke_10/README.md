@@ -37,7 +37,7 @@ $$ w = ( \frac{r-r_2}{r_2-r_1} , \frac{r_1-r} {r_2 - r_1} )$$
 Vi antar at kovariansmatrisen til avkasntingen til de to aksjene er 
 
 
-$$ C = \begin {pmatrix} C_{11} & C_{12} \\ C_{12} & C_{22} \end{pmatrix} $$
+$$ C = \begin{pmatrix} C_{11} & C_{12} \\ C_{12} & C_{22} \end{pmatrix} $$
 
 
 Variansen til hele portefølgen er da gitt ved matriseproduktet (som blir en skalar)
@@ -64,7 +64,7 @@ Dersom vi bruker de numeriske verdiene fra oppgaven (og får chat til å gjøre 
 $$ Var(r) = 8.5 r^2 - 1.9 r + 0.115 $$
 
 
-I scriptet ([oppgave_1.py] (https://github.com/ragnhild-thielemann/MAT1020/blob/main/uke_10/oppgave_1.py))plotter jeg matrisemultiplikasjonen for hver optimal **w** for å finne variansen ved den gitte inverseringen, mot den analytiske løsningen til Chat. 
+I scriptet  [oppgave_1.py] plotter jeg matrisemultiplikasjonen for hver optimal **w** for å finne variansen ved den gitte inverseringen, mot den analytiske løsningen til Chat. 
 
 
 Dersom vi plotter disse mot hverandre, får vi følgene plott: 
