@@ -37,7 +37,7 @@ $$ w = ( \frac{r-r_2}{r_2-r_1} , \frac{r_1-r} {r_2 - r_1} )$$
 Vi antar at kovariansmatrisen til avkasntingen til de to aksjene er 
 
 
-$$ C = \begin{pmatrix} C_{11} & C_{12} \\ C_{12} & C_{22} \end{pmatrix} $$
+$$ C = \begin{pmatrix} C_{11} & C_{12} \\ C_{21} & C_{22} \end{pmatrix} $$
 
 
 Variansen til hele portefølgen er da gitt ved matriseproduktet (som blir en skalar)
