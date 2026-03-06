@@ -103,9 +103,7 @@ $$ E [(R-E)**2] $$
 Altså variansen i prosuert strøm ved tidspunktet $t$ og etterspurt strøm i tidspunktet $t$ . Det kan vises at dette kan skrives som 
 
 
-$$
-
-\sigma = Var(R) + (\mu_r - \mu_e)^2 + Var(E) + 2 Cov(R,E) $$
+$$\sigma = Var(R) + (\mu_r - \mu_e)^2 + Var(E) + 2 Cov(R,E) $$
 
 
 Da produsert mengde strøm er uavhening av etterspurt strøm, vil $Cov(R,E) = 0$ . 
@@ -170,7 +168,7 @@ $$ \mu_r = w^T r \Leftrightarrow
 \end{pmatrix} = 164 $$
 
 
-Gjennomsnittlig strømproduksjon ved kraftverkene er altså 164 MWh
+#### Gjennomsnittlig strømproduksjon ved kraftverkene er altså 164 MWh
 
 
 
