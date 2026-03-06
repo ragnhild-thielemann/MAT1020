@@ -1,18 +1,48 @@
 ## Diskontert nytte
+#### En begrenset naturresuss (kull, olje, gass)
+
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/olje.png)
+
+
+Vi tenker oss at vi har en gitt mengde av en naturresuss $S(t)$ , som vi henter ut en mengde $h(t)$. Dette blir da en dynamisk modell fra $t_0$ til tidshorisonten $T$ , der vi har 
+
+
+$$ S(t + 1) = S(t) - h(t) \\
+t = t_0 , t_0 + 1 , t_0 + 2 , T -1 $$
+
+
+Vi har at
+
+$$ 0 <= h(t) $$
+
+Da vi bare kan hente ut en postiv størrelse av resussen. Grunnet fysiske begrensinger (vi kan ikke hente ut mer enn den totale beholdningen) har vi: 
+
+
+$$h(t) <= S(t)$$
+
+
+og 
+
+$$0<=S(t)$$
+
 
 #### Nytte (velferd/tilfredshet) i fremtiden verdesettes mindre enn nytte i dag.
 
 Diskontert nytte skrives som
 
 
-$$ \sum_{t = t_0}^{T-1} p^t L (h(t)) $$
+$$ \underset{h(t_0),...,h(T-1)}{\max}
+\sum_{t=t_0}^{T-1} \rho^t L(h(t)) $$
 
 
 der:
-- L(h(t)) er nytten av forbruket i perioden (generasjonen $t$ ) 
+- $L(h(t))$ er nytten av forbruket i perioden (generasjonen $t$ ) 
 
-- $p$ = diskonereingsfaktor (hvor mye vi verdsetter senere generasjoner). Dette er gitt ved $p$ = $\frac{1}{1 + r_f}$ der $r_f$ er hvor mye vi diskonerere senere generasjoner. 
+- $p$ = diskonereingsfaktor (hvor mye vi verdsetter senere generasjoner). Dette er gitt ved $p$ = $\frac{1}{1 + r_f}$ 
+    - $r_f$ er hvor mye vi diskonerere senere generasjoner.En høy verdi for denne, vil bety at vi verdsetter senere genersjoner lavt. $r_f$ = 0 vil si at alle generasjoner verdsettes like høyt. 
 
-- $t$ = tidspunkt
+- $t$ = tidspunkt (generasjon)
 
-Da 0 < p < 1 anser vi nytteverdien til en begrenset naturresuss som avtakene etterhvert som flere generasjoner kommer til. 
+Da 0 < $p$ < 1 anser vi nytteverdien til en begrenset naturresuss som avtakene etterhvert når tiden utvikler seg. 
+
+Vi ønsker å maksimere total nytte av den begrensede naturresussen, slik som gir oss optimeringsproblemet vårt. 
