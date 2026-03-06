@@ -23,11 +23,11 @@ b_inv = np.linalg.inv(b_vektor)
 print(b_inv)
 # c) 
 
-mu_e = 200 #det energibehovet vi ønsker å dekke. Vi ønsker å minimere avviket. 
+mu_r = 200 #det energibehovet vi ønsker å dekke. Vi ønsker å minimere avviket. 
 
 #har vist at følgene allokering gir minst murlig avvik, da det er løsningen av optimeringsproblemet med lagrange
 
-w_optimal = mu_e * (b_inv@r)
+w_optimal = mu_r * (b_inv@r)
 
 
 print(w_optimal)

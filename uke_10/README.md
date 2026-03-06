@@ -137,12 +137,11 @@ Vi har nå et utrykk for variansen som en funksjon av fordelingen av  vindparker
 Når dette deriveres, får vi 
 
 
-$$ 2 C w + 2 (w^T r - \mu_r) r = 0 
-
-\Leftrightarrow 
+$$ 2 C w + 2 (w^T r - \mu_r) r = 0\Leftrightarrow C w + (w ^T r ) r= \mu_r r \Leftrightarrow C w + (r^T w ) r = \mu_r r \Leftrightarrow w (C + r r^T ) = \mu_r r \Leftrightarrow w = \mu_r r (C + r r^T )^{-1} $$
 
 
-C w + (w ^T r ) r= \mu_r r \Leftrightarrow
-C w + (r^T w ) r = \mu_r r 
-\Leftrightarrow w (C + r r^T ) = \mu_r r 
-\Leftrightarrow w = \mu_r r (C + r r^T )^{-1} $$
+Dette regner vi ut numersisk med de insatte verdiene fra oppgaven, der $\mu_r$ = 200
+
+Vi får da at optimal allokering av vindparkene er 
+
+$$ w = 
