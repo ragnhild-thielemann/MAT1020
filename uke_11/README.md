@@ -63,9 +63,12 @@ $$B(t + 1) = g(B(t)) $$
 som er en differensiallikning. Nedenfor er det plottet ulike dynamiske modeller for populasjonen, samt forklaring av de ulike modellene. 
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/modeller.png)
+##### Om plottet
 
+- Bæreevnen $K$ er den minste $K$ > 0 som tilfredstiller $g(K)=K$ , altså som er et fikspunkt der populasjonen stabilserererseg. 
+- Parameterene er $r$ = 1.9 , $K$ = 10 og $B$ = 2
 
-
+#### Ulike modeller for å modelere utviklingen
 - Logistisk modell. 
     - $r$ > 0 er hvor mye populasjonen vokser
     - $K$ er naturens bæreevne. Vi ser av plottet at derivertverdeien går mot null, som tilsvarer tidspunktet der populasjonen stabiliserer seg. 
@@ -78,7 +81,7 @@ $$ g(B) = B + r B (1-\frac{B}{K}) $$
     - Stabiliserer seg ved bæreevnen $K$
 
 
-$$g(B) = B exp ^{r(1-\frac{B}{K}))$$
+$$g(B) = B exp^{r(1-\frac{B}{K}))$$
 
 
 - Beverton - Holt modellen
@@ -86,10 +89,7 @@ $$g(B) = B exp ^{r(1-\frac{B}{K}))$$
 
 $$ g(B) = \frac{RB} {1+bB} $$
 
-#### Om plottet
 
-- Bæreevnen $K$ er den minste $K$ > 0 som tilfredstiller $g(K)=K$ , altså som er et fikspunkt der populasjonen stabilserererseg. 
-- Parameterene er $r$ = 1.9 , $K$ = 10 og $B$ = 2
 
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/absolutt.png)
