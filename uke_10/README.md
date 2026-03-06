@@ -1,5 +1,7 @@
 
 ## Oppgave 1
+
+#### a)
 Vi skl vise at gitt to aksjer med forventet avkastning $r_1$ og $r_2$, der $r_1$ $\neq$ $r_2$ , så vil det være nøyaktig en optimal portefølge **w** = ( $w_1$ , $w_2$ )
 
 Vi har at 
@@ -25,13 +27,16 @@ Insatt i det første utrykket har vi da
 
 $$ w^T r_v = r \Leftrightarrow w_1 * r_1 + w_2 * r_2 = r \Leftrightarrow w_1 * r_1 + w_2 * (1-r_1) = r \Leftrightarrow w_1 * r_1 + r_2 - r_2 * w_1 = r \Leftrightarrow w_1 ( r_1 - r_2 ) = r - r_2 \Leftrightarrow  w_1 = \frac{r-r_2}{r_1-r_2} $$
 
-Da vi har at $r_1$ $\neq$ $r_2$ , alstå at forventetet produksjon fra de to vindmøllene er ulike, får vi nå et eksplisitt utrykk for inveseringen vi bør gjøre i vindpark 1. Inverseringen i vindpark 2 vil være $w_24$ = 1- $w_1$
+Da vi har at $r_1$ $\neq$ $r_2$ , alstå at forventetet produksjon fra de to vindmøllene er ulike (hvis ikke vil alle portefølger være like gode) får vi nå et eksplisitt utrykk for inveseringen vi bør gjøre i vindpark 1. Inverseringen i vindpark 2 vil være $w_24$ = 1- $w_1$ 
 
 
 Optimal portefølge blir da 
 
 
 $$ w = ( \frac{r-r_2}{r_2-r_1} , \frac{r_1-r} {r_2 - r_1} )$$
+
+
+#### b
 
 
 Vi antar at kovariansmatrisen til avkasntingen til de to aksjene er 
@@ -45,13 +50,21 @@ C_{21} & C_{22}
 \end{pmatrix}
 $$
 
+Dersom vi skal utrykke variansen i portefølgen med V(R), bruker vi utrykket fra Markowich portefølgeteori for varians
+
+
+$$  \sigma^ 2= w^T C w $$
+
+Vi har w = ( $w_1$ , $w_2$ ) , som gir
+
+
 
 
 
 Variansen til hele portefølgen er da gitt ved matriseproduktet (som blir en skalar)
 
 
-$$ Var(R) = w^T C w \Leftrightarrow \sigma ^ 2 = w_1^2 + Var( r_1 ) + w_2^2 + Var( r_1 ) + 2 w_1 w_2 * Cov( r_1 , r_2 ) $$
+$$ Var(R) = w^T C w \Leftrightarrow \sigma ^ 2 = w_1^2  Var( r_1 ) + w_2^2  Var( r_2 ) + 2 w_1 w_2 * Cov( r_1 , r_2 ) $$
 
 
 Da vi har 
@@ -78,4 +91,48 @@ I scriptet  [oppgave_1.py] plotter jeg matrisemultiplikasjonen for hver optimal 
 Dersom vi plotter disse mot hverandre, får vi følgene plott: 
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/plott_mot_hveradnre.png)
+
+## Oppgave 2
+
+Vi ønsker å minimere 
+
+
+$$ E [(R-E)**2] $$
+
+
+Altså variansen i prosuert strøm ved tidspunktet $t$ og etterspurt strøm i tidspunktet $t$ . Det kan vises at dette kan skrives som 
+
+
+$$
+
+\sigma = Var(R) + (mu_r - mu_e)^2 + Var(E) + 2 Cov(R,E) $$
+
+
+Da produsert mengde strøm er uavhening av etterspurt strøm, vil $Cov(R,E) = 0$ . 
+
+
+
+Vi har at 
+
+$$ Var(R) = w^T C w $$ 
+
+
+og at 
+
+
+$$ mu_r = w^T r $$
+
+
+
+Insatt i utrykket gir dette:
+
+
+$$
+
+
+\sigma = w^T C w + (w^T r  - mu_e)^2 + Var(E) $$
+
+
+Vi har nå et utrykk for variansen som en funksjon av fordelingen av  vindparker **w**, som vi kan derivere, og sette lik 0. Da vi i neste oppgave skal vise at denne er poritivt defitt, vil nullpunktene være minimumspunkter for varians. 
+
 
