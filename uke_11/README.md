@@ -98,3 +98,30 @@ Vi ser av hvordan de ulike modellene utvikler seg over tid at både Ricker-model
 
 ## Høsting av naturresusser
 
+Dersom vi henter ut resusser fra den naturlige populasjonen, vil den utvikle seg 
+
+
+$$ B(t + 1) = g(B(t) - h(t)) , 0<= h(t) <= B(t)$$
+
+
+der $h(t)$ er hvor mye vi henter ut ved tidspunktet $t$ . Hvor mye vi henter ut, er proposjonalt med $B$ , samt $e$ (investeringene vi gjør for å hente ut naturresussene) og $q$ (hvor effektive inveseteringene henter ut naturresussene). 
+
+
+Dette gir 
+
+
+$$h = q e B = H(e,B) $$
+
+
+slik at $h$ blir en skalarfunksjon. (fra ECON1410 kjenner vi dette som en produktfunksjon med to variable). 
+
+- $H(0,e)=H(B,0)=0$
+- Vi antar at $H(e,B)$ er kontiunelig paritell deriverbar, slik at vi kan derivere både med hensyn på $B$ og $e$ . Dermed kan vi analysere følsomheten av høstingen for små endringer i både biomassen $B$ og innsattsen for å hente ut biomassen $e$ . Dette gir 
+
+
+$$
+\begin{cases}
+0 \le H_B(e,B) := \frac{\partial H}{\partial B}(e,B), \\
+0 \le H_e(e,B) := \frac{\partial H}{\partial e}(e,B)
+\end{cases}
+$$
