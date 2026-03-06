@@ -77,17 +77,24 @@ $$ g(B) = B + r B (1-\frac{B}{K}) $$
 - Ricker - modellen
     - Stabiliserer seg ved bæreevnen $K$
 
+
 $$ g(B) = B exp ^{r(1-\frac{B}{K})) $$
+
 
 - Beverton - Holt modellen
 
 
 $$ g(B) = \frac{RB} {1+bB} $$
 
-
-- Bæreevnen $K$ er den minste $K$ > 0 som tilfredstiller $g(K)=K$ , altså som er et fikspunkt der populasjonen stabilsererer seg. 
+#### Om plottet
+    - Bæreevnen $K$ er den minste $K$ > 0 som tilfredstiller $g(K)=K$ , altså som er et fikspunkt der populasjonen stabilserererseg. 
+    - Parameterene er $r$ = 1.9 , $K$ = 10 og $B$ = 2
 
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/absolutt.png)
 
 Vi ser av hvordan de ulike modellene utvikler seg over tid at både Ricker-modellen og den logistiske tilnærmingen er ustabile, mens Beverton–Holt-modellen fører til at populasjonen stabiliserer seg.
+
+
+## Høsting av naturresusser
+
