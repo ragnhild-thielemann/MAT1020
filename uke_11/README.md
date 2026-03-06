@@ -81,7 +81,7 @@ $$ g(B) = B + r B (1-\frac{B}{K}) $$
     - Stabiliserer seg ved bæreevnen $K$
 
 
-$$g(B) = B e^{r(1-\frac{B}{K}}))$$
+$$g(B) = B e^{r(1-\frac{B}{K}}$$
 
 
 - Beverton - Holt modellen
