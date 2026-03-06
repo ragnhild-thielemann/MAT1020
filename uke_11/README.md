@@ -46,3 +46,8 @@ der:
 Da 0 < $p$ < 1 anser vi nytteverdien til en begrenset naturresuss som avtakene etterhvert når tiden utvikler seg. 
 
 Vi ønsker å maksimere total nytte av den begrensede naturresussen, slik som gir oss optimeringsproblemet vårt. 
+
+
+## 
+
+- Bæreevnen $K$ er den minste $K$ > 0 som tilfredstiller $g(K)=K$ , altså som er et fikspunkt der populasjonen stabilsererer seg. 
