@@ -1,5 +1,8 @@
 
-## Oppgave 1
+Denne uken har ukesoppgavene vært å vise entydighet av hvordan man bør investere en portefølge, samt hvordan man bør allokere kraftverk for å sikre mest murlig stabil kraftproduksjon.
+
+
+## Oppgave 1 - optimal portefølge
 
 #### a)
 Vi skl vise at gitt to aksjer med forventet avkastning $r_1$ og $r_2$, der $r_1$ $\neq$ $r_2$ , så vil det være nøyaktig en optimal portefølge **w** = ( $w_1$ , $w_2$ )
@@ -92,7 +95,7 @@ Dersom vi plotter disse mot hverandre, får vi følgene plott:
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/plott_mot_hveradnre.png)
 
-## Oppgave 2
+## Oppgave 2 - kraftverk
 
 Vi ønsker å minimere 
 
