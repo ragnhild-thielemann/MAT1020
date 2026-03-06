@@ -171,4 +171,73 @@ $$ \mu_r = w^T r \Leftrightarrow
 #### Gjennomsnittlig strømproduksjon ved kraftverkene er altså 164 MWh
 
 
+## Oppgave 3
+
+Siste del av oppgaven går på å bruke linjær algebra til å vise at vektoren **w** som gir ekstremalverdien $w_0$ er et minimumspunkt. da vi krever at **w** > 0, kan vi ikke bruke langranges multiplikatormetode for å finne mininimpumsverdenen til 
+
+
+$$ \sigma^2 = w^T C w $$ 
+
+
+under bibetingelsene
+
+$$ w^T r = \mu_r $$
+
+
+og 
+
+
+$$ w^T 1 = \kappa $$
+
+
+### a) 
+
+Vi begynner med definisjonen av n x n - matrise $C$ som er $postivt defitt$ matrise, som dersom 
+
+
+$$ w^T C w > 0 for alle w \neq 0 $$
+
+
+Dette betyr at C bare har postive egenverdier, slik at avbildningen vil være positiv. Dermed vil ekstremalpuntkene til utrykket være minimumspunkter.
+
+
+Vi antar at $C$ er kovariansmatrisen til de stokastiske variablene $W_1$ , $W_2$ , $W_3$ , $W_n$ . 
+
+
+Variansen til 
+
+
+$$Y = w_1 X_1 + w_2 X_2 + w_3 X_3 ... w_n X_n $$
+
+
+er
+
+
+$$\sigma^2 = Var(Y) = w^T C w = w_1^2 Var(X_1) + w_2^2 Var(X_2) + ... +  w_n^2 Var(X_n) >= 0 for alle w $$ 
+
+
+#### Dermed har vi vist at C er ikke-negativt defitt. 
+
+### b)
+
+
+Da vi har at at matrisen C er symetrisk, positivt defitt, har vi:
+
+
+$$ x^T C x > 0 for x \neq 0 $$
+
+Setter 
+
+$$ x = C^{-1} y $$
+
+
+Dette gir 
+
+
+$$ x^T C x \Leftrightarrow y^T C^{-1} C C^{-1} y \Leftrightarrow y^T C^{-1} y > 0 for y \neq 0 $$
+
+
+Slik at $C^{-1}$ er postivt defitt.
+
+
 
