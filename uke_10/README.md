@@ -148,8 +148,8 @@ Vi får da at optimal instalering av kapasiteten bør fordeles slik
 $$
 w =
 \begin{pmatrix}
-123 &
-153 &
+123 \\
+153 \\
 138
 \end{pmatrix}
 $$
@@ -160,9 +160,17 @@ Gjennomsnittlig strømproduksjon for alle kraftverkene er gitt ved
 $$ \mu_r = w^T r \Leftrightarrow 
 \mu_r
  = \begin{pmatrix}
+123 &
+153 &
+138
+\end{pmatrix}\begin{pmatrix}
 0.4 \\
 0.3 \\
 0.5
-\end{pmatrix} \Leftrightarrow = 164 $$
+\end{pmatrix} = 164 $$
+
+
+Gjennomsnittlig strømproduksjon ved kraftverkene er altså 164 MWh
+
 
 
