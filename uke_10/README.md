@@ -105,7 +105,7 @@ Altså variansen i prosuert strøm ved tidspunktet $t$ og etterspurt strøm i ti
 
 $$
 
-\sigma = Var(R) + (mu_r - mu_e)^2 + Var(E) + 2 Cov(R,E) $$
+\sigma = Var(R) + (\mu_r - \mu_e)^2 + Var(E) + 2 Cov(R,E) $$
 
 
 Da produsert mengde strøm er uavhening av etterspurt strøm, vil $Cov(R,E) = 0$ . 
@@ -114,23 +114,21 @@ Da produsert mengde strøm er uavhening av etterspurt strøm, vil $Cov(R,E) = 0$
 
 Vi har at 
 
+
 $$ Var(R) = w^T C w $$ 
 
 
 og at 
 
 
-$$ mu_r = w^T r $$
+$$ \mu_r = w^T r $$
 
 
 
 Insatt i utrykket gir dette:
 
 
-$$
-
-
-\sigma = w^T C w + (w^T r  - mu_e)^2 + Var(E) $$
+$$ \sigma = w^T C w + (w^T r  - mu_e)^2 + Var(E) $$
 
 
 Vi har nå et utrykk for variansen som en funksjon av fordelingen av  vindparker **w**, som vi kan derivere, og sette lik 0. Da vi i neste oppgave skal vise at denne er poritivt defitt, vil nullpunktene være minimumspunkter for varians. 
