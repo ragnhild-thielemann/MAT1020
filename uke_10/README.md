@@ -137,11 +137,32 @@ Vi har nå et utrykk for variansen som en funksjon av fordelingen av  vindparker
 Når dette deriveres, får vi 
 
 
-$$ 2 C w + 2 (w^T r - \mu_r) r = 0\Leftrightarrow C w + (w ^T r ) r= \mu_r r \Leftrightarrow C w + (r^T w ) r = \mu_r r \Leftrightarrow w (C + r r^T ) = \mu_r r \Leftrightarrow w = \mu_r r (C + r r^T )^{-1} $$
+$$ 2 C w + 2 (w^T r - \mu_r) r = 0\Leftrightarrow C w + (w ^T r ) r= \mu_r r \Leftrightarrow C w + (r^T w ) r = \mu_r r \Leftrightarrow (C + r r^T ) w = \mu_r r \Leftrightarrow w = \mu_r (C + r r^T )^{-1} r $$
 
 
 Dette regner vi ut numersisk med de insatte verdiene fra oppgaven, der $\mu_r$ = 200
 
-Vi får da at optimal allokering av vindparkene er 
+Vi får da at optimal instalering av kapasiteten bør fordeles slik
 
-$$ w = 
+
+$$
+w =
+\begin{pmatrix}
+123 &
+153 &
+138
+\end{pmatrix}
+$$
+
+Gjennomsnittlig strømproduksjon for alle kraftverkene er gitt ved 
+
+
+$$ \mu_r = w^T r \Leftrightarrow 
+\mu_r
+ = \begin{pmatrix}
+0.4 \\
+0.3 \\
+0.5
+\end{pmatrix} \Leftrightarrow = 164 $$
+
+
