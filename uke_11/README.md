@@ -100,19 +100,23 @@ $$ g(B) = \frac{RB} {1+bB} $$
 Utviklingen over tid viser at både Ricker-modellen og den logistiske modellen gir ustabile populasjonsdynamikker (ocilerer for gitte startverdier), mens Beverton–Holt-modellen fører til en stabil populasjon.
 
 
-### Høsting av naturresusser
+### Schaefer-modellen: Høsting av naturresusser 
 
-Dersom vi henter ut resusser $h(t)$ fra en naturlig populasjon (slik at den formerer seg) $B(t)$ , vil populasjonen utvikle seg ved en  differensiallikning $g$ (som kan være en av dynamikkene vi så på i forrje avsnitt), gitt ved
+Dersom vi henter ut resusser $h(t)$ fra en populasjon (slik at den formerer seg) $B(t)$ , vil populasjonen utvikle seg ved en  differensiallikning $g$ (som kan være en av dynamikkene vi så på i forrje avsnitt), gitt ved
 
 
 $$ B(t + 1) = g(B(t) - h(t)) , 0<= h(t) <= B(t)$$
 
 
 Vi tar utgangspunkt i at $B(t)$ betegner en fiskebestand. 
-    - Fisket skjer på starten av året, mens reproduksjonen (ved differensiallikningn $g$ ) skjer på slutten av året. 
+- Fiskingen skjer på starten av året, mens reproduksjonen (ved differensiallikningn $g$ ) skjer på slutten av året. 
 
 
-Hvor mye vi henter ut, er proposjonalt med $B$ , samt $e$ (investeringene vi gjør for å hente ut naturresussene) og $q$ (hvor effektive inveseteringene henter ut naturresussene). 
+Hvor mye vi henter ut, er proposjonalt med 
+- $B$ = fiskebestanden vi fisker i
+
+- $e$ = investeringene i fiskebåter for å hente opp fisken 
+- $q$ = hvor effektivt fiskebåtene henter opp fisken (effektiviteten til investeringene) 
 
 
 Dette gir 
@@ -123,8 +127,10 @@ $$h = q e B = H(e,B) $$
 
 slik at $h$ blir en skalarfunksjon. (fra ECON1410 kjenner vi dette som en produktfunksjon med to variable). 
 
-- $H(0,e)=H(B,0)=0$
-- Vi antar at $H(e,B)$ er kontiunelig paritell deriverbar, slik at vi kan derivere både med hensyn på $B$ og $e$ . Dermed kan vi analysere følsomheten av høstingen for små endringer i både biomassen $B$ og innsattsen for å hente ut biomassen $e$ . Dette gir 
+Vi har at
+
+   - $H(0,e)=H(B,0)=0$
+  - Vi antar at $H(e,B)$ er kontiunelig paritell deriverbar, slik at vi kan derivere både med hensyn på $B$ og $e$ . Dermed kan vi analysere følsomheten av høstingen for små endringer i både biomassen $B$ og innsattsen for å hente ut biomassen $e$ . Dette gir 
 
 
 $$
@@ -133,3 +139,54 @@ $$
 0 \le H_e(e,B) := \frac{\partial H}{\partial e}(e,B)
 \end{cases}
 $$
+
+
+Biologer og økonomer har to ulike måter å tilnærme seg funksjonen H( $e$ , B) for innhøstingen av en begrenset naturresuss. For en biolog, beskriver den hvor mye av populasjonen som blir fjernet, og omtales som **høstingsfunksjonen** . 
+
+For en økonom, er H( $e$ ,B) en **produksfunksjon** med to insatsfaktorer, realkapital og fiskebestand. For økonomer, kan produktfunksjonen beskrives som 
+
+
+$$H(e,B) = q e^{alpha} B^{beta} $$ 
+
+
+der $\alpha$ >= 0 og $\beta$ >= 0 beskriver elastisiteten til produksjonen. 
+- En høy verdi for $\alpha$ gjør at en liten endring i inveseringene gir en vesentlig høyere produksjon. Tilsvarende for parameteren $\beta$ .
+
+
+### Gordon-modellen : Økonomisk modell for utnyttelse av en resuss
+
+Gordon-modellen ønsker å maksimere profitten ved å høste en naturresuss. Vi  har en kostnadsfunksjon $C(e)$ , som avheniger av investeringene $e$ , og vi selger fisken til prisne $p$ . Profitten er da gitt ved
+
+
+$$R(e,B) := p(H(e,B)) - C(e) $$
+
+
+- $C(0)$ = 0 
+    - Om vi ikke gjør noen investeringer, har vi heller ingen kostnader
+- $C'(e)$ > 0, da en økning i antall fiskebåter vil føre til økte kostander. 
+- Vi antar at kostnadene er linjære, slik at vi har $C(e) = ce$ , $c>0$
+
+Profittfunksjonen $R(e,B)$ kan maksimeres under bibetingelsen om at $B = g(B-H(e,B))$ . Optimeringsproblemet er altså å maksimere profitten, samtidig som bestanden $B$ ligger i et fikspunkt for funksjonen $g(B-H(e,B))$ . Da vil populasjonen være stabil over tid. 
+
+
+#### Maksimere profitten for alle fremtidige generasjoner
+
+Da vi ønsker en bærekraftig utnyttelse av resussen, ønker vi å maksimere profitten fra fiskebestanden for nåværende, og alle fremtidige genereasjoener. Vi summererer derfor profitten for alle generasjoner, der vi legger til en diskonteringsfaktor 0 < $\rho$ < 1. Dette gir følgene funksjon, som vi ønsker å maksimere
+
+
+$$ \underset{e(t_0),...,e(T-1)}{\max}
+\sum_{t=t_0}^{T-1} \rho^t (p H(e(t),B(t)) - C(e(t)) $$
+
+
+#### Maksimere nytten 
+
+For å maksimere samfunnets totale nytte av innhøstingen av en fiskebestatd, måler vi igjen summen av diskontrete nytteverdier fra høstienen i hver periode. Dette skrive som 
+
+
+$$ \underset{h(t_0),...h(T-1)}{\max}
+\sum_{t=t_0}^{T-1} \rho^t ((L(h(t)) + \rho^T L(B(T)) $$
+
+
+- Leddene $\rho^t ((L(h(t))$ beskriver nåverdiene til nytten vi får fra å høste $h(t)$ av bestanden $B(t)$
+
+- Det siste leddet $\rho^T ((L(h(T))$ beskriver verdien av bestanddelen som er igjen etter vi har hentet ut resussene. Dette viser at resussen har en verdi, til tross for at vi ikke henter den ut, og gjør den til penger. 
