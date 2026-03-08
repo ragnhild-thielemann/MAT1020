@@ -1,7 +1,7 @@
-## Diskontert nytte
+# Kapittel 2
 ## 2.1 Utnyttelse av  en begrenset naturresuss
 
-![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/olje.png)
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/oljeee.png)
 
 
 Vi tenker oss at vi har en gitt mengde av en naturresuss $S(t)$ , som vi henter ut en mengde $h(t)$. Mengden vi har ved tiden $t$ = $t_0$ + 1  blir da en dynamisk modell fra $t_0$ til tidshorisonten $T$ , der vi har 
@@ -52,7 +52,9 @@ der:
 Da 0 < $p$ < 1 anser vi nytteverdien fremtidige generasjoner får av en naturresuss som avtakene. Dess lavere verdi for $\rho$ , dess større andel $h(t)$ bør tidligere generasjoner hente ut av $S(t)$
 
 
-## 2.2 Differensiallikninger for utnvinning av  en begrenset resuss
+## 2.2 Differensiallikninger for utnvinning av  en fornybar resuss
+
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/fisk.png)
 
 ### Ulike modeller for utvikling av en populasjon
 
@@ -87,7 +89,7 @@ $$g(B) = B e^{r(1-\frac{B}{K})}$$
 
 
 - Beverton - Holt modellen
-    - Bæreevnen er gitt ved $K$ = $\frac{R-1}{b} . 
+    - Bæreevnen er gitt ved $K$ = $\frac{R-1}{b} $ 
 
 
 $$ g(B) = \frac{RB} {1+bB} $$
@@ -146,7 +148,7 @@ Biologer og økonomer har to ulike måter å tilnærme seg funksjonen H( $e$ , B
 For en økonom, er H( $e$ ,B) en **produksfunksjon** med to insatsfaktorer, realkapital og fiskebestand. For økonomer, kan produktfunksjonen beskrives som 
 
 
-$$H(e,B) = q e^{alpha} B^{beta} $$ 
+$$H(e,B) = q e^{$\alpha$} B^{$\beta$} $$ 
 
 
 der $\alpha$ >= 0 og $\beta$ >= 0 beskriver elastisiteten til produksjonen. 
