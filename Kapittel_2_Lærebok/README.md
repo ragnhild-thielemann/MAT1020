@@ -1,7 +1,7 @@
 # Kapittel 2
 ## 2.1 Utnyttelse av  en begrenset naturresuss
 
-![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/oljeee.png)
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/oljeee.jpg)
 
 
 Vi tenker oss at vi har en gitt mengde av en naturresuss $S(t)$ , som vi henter ut en mengde $h(t)$. Mengden vi har ved tiden $t$ = $t_0$ + 1  blir da en dynamisk modell fra $t_0$ til tidshorisonten $T$ , der vi har 
@@ -54,7 +54,7 @@ Da 0 < $p$ < 1 anser vi nytteverdien fremtidige generasjoner får av en naturres
 
 ## 2.2 Differensiallikninger for utnvinning av  en fornybar resuss
 
-![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/fisk.png)
+![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/fisk.jpg)
 
 ### Ulike modeller for utvikling av en populasjon
 
