@@ -1,10 +1,10 @@
 ## Diskontert nytte
-#### En begrenset naturresuss (kull, olje, gass)
+## 2.1 Utnyttelse av  en begrenset naturresuss
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/olje.png)
 
 
-Vi tenker oss at vi har en gitt mengde av en naturresuss $S(t)$ , som vi henter ut en mengde $h(t)$. Dette blir da en dynamisk modell fra $t_0$ til tidshorisonten $T$ , der vi har 
+Vi tenker oss at vi har en gitt mengde av en naturresuss $S(t)$ , som vi henter ut en mengde $h(t)$. Mengden vi har ved tiden $t$ = $t_0$ + 1  blir da en dynamisk modell fra $t_0$ til tidshorisonten $T$ , der vi har 
 
 
 $$ S(t + 1) = S(t) - h(t) \\
@@ -26,41 +26,43 @@ og
 $$0<=S(t)$$
 
 
-#### Nytte (velferd/tilfredshet) i fremtiden verdesettes mindre enn nytte i dag.
+Grunnet ønsket om å ha en viss mengde etter endt utnyttelse av resussen, skriver vi gjerne 
 
-Diskontert nytte skrives som
 
+$$S^{b} <= S(t)$$
+
+
+
+Da $S(t)$ er en begrenset resuss, ønsker vi at alle generasjoner frem i tid får utnyttet resussen. En slik bærekraftig utnyttelse kan omtales som **Maximim Rawls criterion** , og handler om å maksimere den totale opplevde velferden av en resuss. Dette gir følgene optimeringsproblem
+
+### Utrykk for diskontrent nytte
 
 $$ \underset{h(t_0),...,h(T-1)}{\max}
 \sum_{t=t_0}^{T-1} \rho^t L(h(t)) $$
 
 
 der:
-- $L(h(t))$ er nytten av forbruket i perioden (generasjonen $t$ ) 
+- $L(h(t))$ er nytten generasjonen $t$ får av mengden $h(t)$ de utnvinner fra den tømbare naturresussen $S(t)$ 
 
-- $p$ = diskonereingsfaktor (hvor mye vi verdsetter senere generasjoner). Dette er gitt ved $p$ = $\frac{1}{1 + r_f}$ 
-    - $r_f$ er hvor mye vi diskonerere senere generasjoner.En høy verdi for denne, vil bety at vi verdsetter senere genersjoner lavt. $r_f$ = 0 vil si at alle generasjoner verdsettes like høyt. 
+- $\rho$ = diskonereingsfaktor (hvor mye vi verdsetter senere generasjoner frem i tid). Dette er gitt ved $p$ = $\frac{1}{1 + r_f}$ 
+    - $r_f$ er hvor mye vi diskonteringsfakoren. En høy verdi for $r_f$, vil bety at vi verdsetter senere genersjoner lavt. $r_f$ = 0 vil si at alle generasjoner verdsettes like høyt. 
 
 - $t$ = tidspunkt (generasjon)
 
-Da 0 < $p$ < 1 anser vi nytteverdien til en begrenset naturresuss som avtakene etterhvert når tiden utvikler seg. 
-
-Vi ønsker å maksimere total nytte av den begrensede naturresussen, slik som gir oss optimeringsproblemet vårt. 
+Da 0 < $p$ < 1 anser vi nytteverdien fremtidige generasjoner får av en naturresuss som avtakene. Dess lavere verdi for $\rho$ , dess større andel $h(t)$ bør tidligere generasjoner hente ut av $S(t)$
 
 
-## 
+## 2.2 Differensiallikninger for utnvinning av  en begrenset resuss
 
+### Ulike modeller for utvikling av en populasjon
 
-
-
-## Differensiallikninger for utviklingen i populasjonen
-
-Utviklingen i en populajson kan modeleres ved 
+Biologer beskriver gjerne utviklingen i en populasjon som en differensiallikning, gitt ved 
 
 
 $$B(t + 1) = g(B(t)) $$
 
-som er en differensiallikning. Nedenfor er det plottet ulike dynamiske modeller for populasjonen, samt forklaring av de ulike modellene. 
+
+Det er ulike dynamiske modeller for å beskrive utviklingen til en art, som er plottet nedenfor. Nedenfor er det plottet ulike dynamiske modeller for populasjonen, samt forklaring av de ulike modellene. 
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/modeller.png)
 ##### Om plottet
@@ -78,13 +80,14 @@ $$ g(B) = B + r B (1-\frac{B}{K}) $$
 
 
 - Ricker - modellen
-    - Stabiliserer seg ved bæreevnen $K$
+    - Stabiliserer seg ved bæreevnen $K$ . Den deriverte (som vi måler langs y-aksen) vil gå mot 0 når populasjonen når bæreevnen.
 
 
-$$g(B) = B e^{r(1-\frac{B}{K}}$$
+$$g(B) = B e^{r(1-\frac{B}{K})}$$
 
 
 - Beverton - Holt modellen
+    - Bæreevnen er gitt ved $K$ = $\frac{R-1}{b} . 
 
 
 $$ g(B) = \frac{RB} {1+bB} $$
@@ -94,18 +97,22 @@ $$ g(B) = \frac{RB} {1+bB} $$
 
 ![Modelering](https://github.com/ragnhild-thielemann/MAT1020/blob/main/images/absolutt.png)
 
-Vi ser av hvordan de ulike modellene utvikler seg over tid at både Ricker-modellen og den logistiske tilnærmingen er ustabile, mens Beverton–Holt-modellen fører til at populasjonen stabiliserer seg.
+Utviklingen over tid viser at både Ricker-modellen og den logistiske modellen gir ustabile populasjonsdynamikker (ocilerer for gitte startverdier), mens Beverton–Holt-modellen fører til en stabil populasjon.
 
 
-## Høsting av naturresusser
+### Høsting av naturresusser
 
-Dersom vi henter ut resusser fra den naturlige populasjonen, vil den utvikle seg 
+Dersom vi henter ut resusser $h(t)$ fra en naturlig populasjon (slik at den formerer seg) $B(t)$ , vil populasjonen utvikle seg ved en  differensiallikning $g$ (som kan være en av dynamikkene vi så på i forrje avsnitt), gitt ved
 
 
 $$ B(t + 1) = g(B(t) - h(t)) , 0<= h(t) <= B(t)$$
 
 
-der $h(t)$ er hvor mye vi henter ut ved tidspunktet $t$ . Hvor mye vi henter ut, er proposjonalt med $B$ , samt $e$ (investeringene vi gjør for å hente ut naturresussene) og $q$ (hvor effektive inveseteringene henter ut naturresussene). 
+Vi tar utgangspunkt i at $B(t)$ betegner en fiskebestand. 
+    - Fisket skjer på starten av året, mens reproduksjonen (ved differensiallikningn $g$ ) skjer på slutten av året. 
+
+
+Hvor mye vi henter ut, er proposjonalt med $B$ , samt $e$ (investeringene vi gjør for å hente ut naturresussene) og $q$ (hvor effektive inveseteringene henter ut naturresussene). 
 
 
 Dette gir 
