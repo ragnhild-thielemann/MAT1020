@@ -76,20 +76,31 @@ Det er ulike dynamiske modeller for å beskrive utviklingen til en art, som er p
 - Logistisk modell. 
     - $r$ > 0 er hvor mye populasjonen vokser
     - $K$ er naturens bæreevne. Vi ser av plottet at derivertverdeien går mot null, som tilsvarer tidspunktet der populasjonen stabiliserer seg. 
+    - Logistisk vekst gir bare mening for $B<\frac{k(r+1)}{r}$ Utenfor dette får vi negativ vekst. 
 
 
-$$ g(B) = B + r B (1-\frac{B}{K}) $$
+$$ g(B) = B + r B (1-\frac{B}{K}) = B ( 1 + r ((1-\frac{B}{K})$$
 
 
 - Ricker - modellen
     - Stabiliserer seg ved bæreevnen $K$ . Den deriverte (som vi måler langs y-aksen) vil gå mot 0 når populasjonen når bæreevnen.
+    
 
 
 $$g(B) = B e^{r(1-\frac{B}{K})}$$
 
 
+- Gitt taylorutviklingen, har vi for små vedier av x at $e^x = 1 + x$ . Dette gir for små verdier et utrykk som er likt som den logistiske modellen.
+
+
+$$ g(B) = B ( 1+ r(1-\frac{B}{K})$$ 
+
+
+
+
 - Beverton - Holt modellen
     - Bæreevnen er gitt ved $K$ = $\frac{R-1}{b} $ 
+    
 
 
 $$ g(B) = \frac{RB} {1+bB} $$
@@ -101,7 +112,9 @@ $$ g(B) = \frac{RB} {1+bB} $$
 
 Utviklingen over tid viser at både Ricker-modellen og den logistiske modellen gir ustabile populasjonsdynamikker (ocilerer for gitte startverdier), mens Beverton–Holt-modellen fører til en stabil populasjon.
 
+#### Om fikspunkt
 
+Modellene vil konvergere mot $g(K) = K$ , alstå at den konvergerer mot bæreevnen. 
 ### Schaefer-modellen: Høsting av naturresusser 
 
 Dersom vi henter ut resusser $h(t)$ fra en populasjon (slik at den formerer seg) $B(t)$ , vil populasjonen utvikle seg ved en  differensiallikning $g$ (som kan være en av dynamikkene vi så på i forrje avsnitt), gitt ved
