@@ -84,7 +84,9 @@ $$
 \frac{R (B - h)}{1 + (B - h) b} = B\\
 R ( B - h) = B + B + B b (B-h) \\
 R B - R h = B + B^2 b - B h b \\
-h = \frac{B + B^2 b - R B} {-b B + R}
+h = \frac{B + B^2 b - R B} {b B - R} \\
+h = \frac{B (Bb + (1-R)} {b B - R} \\
+h = \frac{B (-Bb + (R-1)} {R - b B}
 \end{aligned} 
 $$
 
