@@ -61,5 +61,5 @@ K = 0 er en gydlig løsning \\
 1 + K b - R = 0 \\
 K = \frac{R-1}{b} \\
 Dette blir den positive løsningen for K \neq 0
-\begin{aligned} $$
+\end{aligned} $$
 
