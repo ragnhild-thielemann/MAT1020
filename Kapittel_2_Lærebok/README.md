@@ -79,7 +79,7 @@ Det er ulike dynamiske modeller for å beskrive utviklingen til en art, som er p
     - Logistisk vekst gir bare mening for $B<\frac{k(r+1)}{r}$ Utenfor dette får vi negativ vekst. 
 
 
-$$ g(B) = B + r B (1-\frac{B}{K}) = B ( 1 + r ((1-\frac{B}{K})$$
+$$ g(B) = B + r B (1-\frac{B}{K}) = B ( 1 + r (1-\frac{B}{K}))$$
 
 
 - Ricker - modellen
@@ -87,7 +87,7 @@ $$ g(B) = B + r B (1-\frac{B}{K}) = B ( 1 + r ((1-\frac{B}{K})$$
     
 
 
-$$g(B) = B e^{r(1-\frac{B}{K})}$$
+$$g(B) = B e^{r(1-\frac{B}{K}))}$$
 
 
 - Gitt taylorutviklingen, har vi for små vedier av x at $e^x = 1 + x$ . Dette gir for små verdier et utrykk som er likt som den logistiske modellen.
@@ -100,6 +100,7 @@ $$ g(B) = B ( 1+ r(1-\frac{B}{K})$$
 
 - Beverton - Holt modellen
     - Bæreevnen er gitt ved $K$ = $\frac{R-1}{b} $ 
+    - Da funksjonen er voksene for alle $B(t)$, vil man ikke få ocilerende oppførsel. Den vil enten konvergere mot fikspunktet ovenifra eller nedenfra, og vil derfor stabilisere seg. 
     
 
 
@@ -164,7 +165,7 @@ For en økonom, er H( $e$ ,B) en **produksfunksjon** med to insatsfaktorer, real
 $$H(e,B) = q e^{$\alpha$} B^{$\beta$} $$ 
 
 
-der $\alpha$ >= 0 og $\beta$ >= 0 beskriver elastisiteten til produksjonen. 
+der $\alpha$ >= 0 og $\beta$ >= 0 beskriver elastisiteten til produksjonen. Dette kan vise en avtakene margnialproduktiviet (på et tidspunkt vil ikke flere fiskebåter kunne hente ut mer fisk).  
 - En høy verdi for $\alpha$ gjør at en liten endring i inveseringene gir en vesentlig høyere produksjon. Tilsvarende for parameteren $\beta$ .
 
 
