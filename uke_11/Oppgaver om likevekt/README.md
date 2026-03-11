@@ -76,7 +76,7 @@ Dette blir den positive løsningen for $K \neq 0$
 
 ### b)
 
-Antar at årets bestand er B < $\frac{R}{b} $ , der b = $\frac{R-1}{K} $ . Dette gir da for å sikre stabil bestand, har vi 
+Antar at årets bestand er B < $\frac{R}{b}$ , der b = $\frac{R-1}{K}$ . Dette gir da for å sikre stabil bestand, har vi 
 
 
 $$ 
@@ -86,13 +86,14 @@ R ( B - h) = B + B + B b (B-h) \\
 R B - R h = B + B^2 b - B h b \\
 h = \frac{B + B^2 b - R B} {-b B + R}
 \end{aligned} 
+$$
 
 
 Da det ikke gir mening med et negativt uttak, setter vi betingelsen
 
 $$ 
 \begin{aligned}
-R - b B> 0 \LeftRigthArrow B < \frac{R}{b}
+R - b B> 0 \LeftRigtArrow B < \frac{R}{b}
 \end{aligned}
 $$
 
