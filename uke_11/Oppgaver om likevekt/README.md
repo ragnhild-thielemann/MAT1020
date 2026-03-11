@@ -43,6 +43,7 @@ h = \frac{1}{6} B
 
 
 # Oppgave 2
+### a)
 
 I denne oppgaven ser vi på Beverton - Holt - modellen, der
 
@@ -57,9 +58,44 @@ G(K) = K = \frac{RK}{1+bK} \\
 K + K^2 b = R K \\
 K + K^2 b - R K = 0 \\
 K (1 + K b - R ) = 0 \\
-K = 0 er en gydlig løsning \\
+\end{aligned} $$
+
+
+$K = 0$ er altså en gyldig løsning. Vi var imidertid ute etter den porsitve løsningen. Dette gir 
+
+
+$$ 
+\begin{aligned}
 1 + K b - R = 0 \\
 K = \frac{R-1}{b} \\
-Dette blir den positive løsningen for K \neq 0
-\end{aligned} $$
+\end{aligned} 
+$$
+
+
+Dette blir den positive løsningen for $K \neq 0$
+
+### b)
+
+Antar at årets bestand er B < $\frac{R}{b} $ , der b = $\frac{R-1}{K} $ . Dette gir da for å sikre stabil bestand, har vi 
+
+
+$$ 
+\begin{aligned}
+\frac{R (B - h)}{1 + (B - h) b} = B\\
+R ( B - h) = B + B + B b (B-h) \\
+R B - R h = B + B^2 b - B h b \\
+h = \frac{B + B^2 b - R B} {-b B + R}
+\end{aligned} 
+
+
+Da det ikke gir mening med et negativt uttak, setter vi betingelsen
+
+$$ 
+\begin{aligned}
+R - b B> 0 \LeftRigthArrow B < \frac{R}{b}
+\end{aligned}
+$$
+
+
+
 
