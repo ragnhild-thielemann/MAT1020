@@ -95,9 +95,12 @@ Da det ikke gir mening med et negativt uttak, setter vi betingelsen
 
 $$ 
 \begin{aligned}
-R - b B> 0 \LeftRigtArrow B < \frac{R}{b}
+R - b B> 0 $\LeftRigtArrow$ B < \frac{R}{b}
 \end{aligned}
 $$
+
+
+Dersom bestanden er større enn kapasiteten, vil bestanden avta. 
 
 
 
