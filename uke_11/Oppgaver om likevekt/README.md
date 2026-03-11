@@ -57,12 +57,9 @@ G(K) = K = \frac{RK}{1+bK} \\
 K + K^2 b = R K \\
 K + K^2 b - R K = 0 \\
 K (1 + K b - R ) = 0 \\
-
 K = 0 er en gydlig løsning \\
-
 1 + K b - R = 0 \\
 K = \frac{R-1}{b} \\
-
 Dette blir den positive løsningen for K \neq 0
 \begin{aligned} $$
 
