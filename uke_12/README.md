@@ -29,3 +29,11 @@ $$
 x_n = A r_1 + B r_2
 
 $$
+
+Når vi løser den karakteristiske likningen får vi
+
+$$ begin{align}
+r_1 = \frac{5}{4}
+r_2 = -1
+end {align}
+$$ 
