@@ -44,11 +44,11 @@ Satt inn i startbetingelsene får vi følgene liknignsett
 
 
 $$ \begin{align}
-A r_1^0 + B r_2^0 &= 190 \\
-A r_1^1 + B r_2^1 &= 260 \\
+A r_1^0 + B r_2^0 = 190 \\
+A r_1^1 + B r_2^1 = 260 \\
 
-A  + B  &= 190 \\
-A \frac{5}{4} - B &= 260 \\
+A  + B  = 190 \\
+A \frac{5}{4} - B = 260 \\
 
 A = 200
 B = -10
