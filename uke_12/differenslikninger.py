@@ -27,12 +27,19 @@ print(fibonacci(4))
 
 #%%
 import numpy as np
-A= 324.196
-B= -134.196
+import matplotlib.pyplot as plt
+A_a= 200
+B_a= -10
 
-x_1 =( 1+np.sqrt(17))/8
-x_2 = (1-np.sqrt(17))/8
-def syk(n):
+x_1_a = 5/4
+x_2_a = -1
+
+A_c = 230
+B_c = -40
+x_1_c = 1
+x_2_c= -3/4
+
+def syk(n,A,B,x_1,x_2,smitte):
     if n == 0:
         return A*x_1**n + B*x_2**n
     
@@ -40,11 +47,24 @@ def syk(n):
         return A*x_1**n + B*x_2**n
     
     else:
-        return 0.23*syk(n-1) + 0.25*syk(n-2)
+        return 0.25*syk(n-1,A,B,x_1,x_2,smitte) + smitte *syk(n-2,A,B,x_1,x_2,smitte)
     
-print(syk(10))
 
-def ja(n):
-    return A*x_1**n + B*(x_2**n)
 
-print(ja(10))
+n_verdier = []
+a_verdier = []
+b_verdier = []
+for n in range(5):
+    n_verdier.append(n)
+    a_verdier.append(syk(n,A_a,B_a,x_1_a,x_2_a,5/4))
+    b_verdier.append(syk(n,A_c,B_c,x_1_c,x_2_c,3/4))
+
+plt.ylabel("Antall syke")
+plt.xlabel("Uker")
+plt.plot(n_verdier,b_verdier,label = "Oppgave c",color = "hotpink")
+
+plt.plot(n_verdier,a_verdier,label = "Oppgave b")
+plt.title("Sykdomsutvikling")
+plt.grid()
+plt.legend()
+plt.show()
