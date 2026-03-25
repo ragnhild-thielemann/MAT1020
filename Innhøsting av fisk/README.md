@@ -67,9 +67,9 @@ Når vi setter dette inn i utrykket for $V(2,B)$ , og setter konstantene utenfor
 $$
 \begin{align}
 V(2,B)_{optimal}
-&= \rho^2 \sqrt{\frac{B}{1 + \rho^2 R} + \rho^3 \sqrt{R(B(2)-\frac{B}{1 + \rho^2 R}
+&= \rho^2 \sqrt{\frac{B}{1 + \rho^2 R} + \rho^3 \sqrt{R(B(2)-\frac{B}{1 + \rho^2 R}}
 \\ 
-ja &= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R} \sqrt{B} 
+ja &= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R}} \sqrt{B} 
 \end{align} 
 $$
 
