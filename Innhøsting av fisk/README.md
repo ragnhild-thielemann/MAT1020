@@ -163,12 +163,13 @@ Det gir løsningen for optimalt uttak det første året til
 
 $$ 
 \begin{align} h_{optimal} &= \frac{ B}{(A_2^2 R + 1} \\
-V(B) &= \sqrt{1 + A_2^2 R}  \sqrt{B} $$
+V(B) &= \sqrt{1 + A_2^2 R}  \sqrt{B}
+\end{align} $$
 
 
 ### Oppgave e)
 
-B(3) vil være gitt ved 
+B(3) vil være gitt ved en dynamisk prosess med flere ledd, der vi regner oss tilbake i tid. 
 
 
 $$\begin{align}
