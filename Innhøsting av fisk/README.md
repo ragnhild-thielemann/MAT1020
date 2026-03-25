@@ -41,6 +41,7 @@ $$
 
 For å finne optimal innhøsting, deriverer vi dette med hensyn på $h$ , som vi så setter lik null for å maksimere funksjonsverdien:
 
+
 $$ \begin{align}
 \frac{\partial}{\partial h} V(2,B) &= \frac{\partial}{\partial h}  \rho^2 \sqrt{h(2)} + \rho^3 \sqrt{R(B(2)-h(2))} = 0 \\ \frac{\rho^2}{2\sqrt{h}} = \frac{\rho^3 R}{2\sqrt{RB-Rh} \\ \frac{1}{h} = \frac{\rho^2 R}{B-h} \\ B-h = \rho^2 R h \\ h = \frac{B}{1+\rho^2 R}
 \end{align}
