@@ -147,7 +147,7 @@ For $V(1,B)$ er parameterene $a$ = $\rho$ og $b$ = $A_1$ . Dette gir
 
 $$
 \begin{align} 
-h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} \end{align} \\
+h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} 
 V(1,B) &= \sqrt{\rho^2 + A_1^2 R} \sqrt{B} 
 \end{align} $$
 
