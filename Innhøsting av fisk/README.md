@@ -70,7 +70,8 @@ V(2,B)_{optimal}
 &= \rho^2 \sqrt{\frac{B}{1 + \rho^2 R}
 \end{align}} + \rho^3 \sqrt{R(B(2)-\frac{B}{1 + \rho^2 R}
 \end{align})} \\ 
-&= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R} \sqrt{B} \end{align} $$
+&= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R} \sqrt{B} 
+\end{align} $$
 
 
 Dette gir oss et utrykk for optimal innhøsting andre året vi fisker etter torsk. 
