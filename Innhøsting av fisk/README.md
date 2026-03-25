@@ -69,11 +69,38 @@ $$
 V(2,B)_{optimal}
 &= \rho^2 \sqrt{\frac{B}{1 + \rho^2 R}} + \rho^3 \sqrt{R(B(2)-\frac{B}{1 + \rho^2 R}}
 \\ 
-ja &= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R}} \sqrt{B} 
+ &= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R}} \sqrt{B} 
 \end{align} 
 $$
 
 
-Dette gir oss et utrykk for optimal innhøsting andre året vi fisker etter torsk. 
+Dette gir oss et utrykk for optimal innhøsting andre året vi fisker  torsk. 
 
 ### Oppgave c) 
+
+Når vi skal finne optimal innhøsting i $t$ = 1, bruker vi den samme negative induksjonen. Vi setter
+
+
+$$ \begin{align}
+V(1,B)_{optimal} = \rho \sqrt{h(1)} + V(2,R(B(1)-h(1)) \end{align} $$
+
+
+Da vi i forrigje oppgave regnet ut $V(2,B)_{optimal}$ til å være: 
+
+
+$$ \begin{align}
+V(2,B)_{optimal}  &= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R}} \sqrt{B} 
+\end{align} $$ 
+
+
+har vi et problem på formen med en konstant $A_1$ 
+
+
+$$ \begin{align}
+V(1,B)_{optimal} = \rho \sqrt{h(1)} + V(2,R(B(1)-h(1)) \\
+\rho \sqrt{h} + A_{1} \sqrt{R(B-h)}
+\end{align} $$
+
+
+Dette partiellderiverer vi på samme måte med hensyn på $h$ , som gir oss 
+
