@@ -55,7 +55,6 @@ $$
 &= \frac{\rho^2 R}{B - h} \\
 B - h 
 &= \rho^2 R h \\
-
 h 
 &= \frac{B}{1 + \rho^2 R}
 \end{align}
