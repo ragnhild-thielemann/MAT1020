@@ -110,7 +110,7 @@ V(t,B)_{optimal} = a \sqrt{h} + b \sqrt{R(B-h)} \\
 \frac{\partial}{\partial h} V(t,B)
 &= \frac{\partial}{\partial h} \left( a \sqrt{h} + b \sqrt{R(B - h)} \right) = 0 \\
 h_{optimal} = \frac{a^2 B}{b^2 R + a^2}
-\end{align}
+\end{align}$$
 
 
 
