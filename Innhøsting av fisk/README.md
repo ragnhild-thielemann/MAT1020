@@ -127,13 +127,12 @@ Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat fo
 
 $$
 \begin{align}
-V(B)
-&= a \sqrt{h_{\text{optimal}}} + b \sqrt{R\left(B - h_{\text{optimal}}\right)} \\
-&= a \sqrt{\frac{a^2}{a^2 + b^2 R} B}
+V(B) &= a \sqrt{h_{\text{optimal}}} + b \sqrt{R\left(B - h_{\text{optimal}}\right)} \\
+ a \sqrt{\frac{a^2}{a^2 + b^2 R} B}
 + b \sqrt{R \cdot \frac{b^2 R B}{a^2 + b^2 R}} \\
-&= \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
+ \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
 + \frac{b^2 R}{\sqrt{a^2 + b^2 R}} \sqrt{B} \\
-&= \sqrt{a^2 + b^2 R} \, \sqrt{B}
+\sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}
 $$
 
