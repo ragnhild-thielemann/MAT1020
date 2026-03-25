@@ -1,9 +1,16 @@
 
 
-Vi  antar at vi fisker torsk, og at nyttefunksjonen er gitt ved $L(h) = \sqrt{h}$ . Vi skal fiske i to år av en bestand som nå består av $B$ torsk. Diskonteringsraten er $\rho$ < 1, mens torsken formerer seg med en faktor $R$ > 1. For å løse dette problemet bruker vi negativ induksjon, der begynner med verdien ved $t$ = 3, før vi regner oss nedover. 
+Vi  antar at vi fisker torsk, og at nyttefunksjonen er gitt ved $L(h) = \sqrt{h}$ (Kvadratfunksjonen gir en konkav funksjon, som henger sammen med avtakene marginalproduktivitet for nytten oppnådd). Vi skal fiske i to år av en bestand som nå består av $B$ torsk. Diskonteringsraten er $\rho$ < 1, mens torsken formerer seg med en faktor $R$ > 1. For å løse dette problemet bruker vi negativ induksjon, der begynner med verdien ved $t$ = 3, før vi regner oss nedover. 
 
 
-Dynamikken til torskebetanden er gitt ved B(0) = B , B(1) = R(B-h(0)), B(2) = R(B(1)-h(1)) og B(3) = R(B(2)-h(2)) , altså en linjær formering. Vi  definerer nyttefunksjonen 
+Dynamikken til torskebetanden er gitt ved 
+
+
+$$\begin{align}B(0) = B , B(1) = R(B-h(0)), B(2) = R(B(1)-h(1)) og B(3) = R(B(2)-h(2)) \end{align}$$
+
+
+, altså en linjær dynamisk funksjon. Vi  definerer nyttefunksjonen 
+
 
 $$
 V(t, B) =
@@ -16,6 +23,7 @@ V(t, B) =
 \sum_{s=t}^{2} \rho^s \sqrt{h(s)} + \rho^3 \sqrt{B(3)}
 \right]
 $$
+
 
 ### Oppgave a)
 
@@ -106,11 +114,13 @@ Vi løser nå den generelle problemstillingen for den negative induksjonen for o
 
 
 $$\begin{align} 
-V(t,B)_{optimal} = a \sqrt{h} + b \sqrt{R(B-h)} \\
+V(t,B)_{optimal} &= a \sqrt{h} + b \sqrt{R(B-h)} \\
 \frac{\partial}{\partial h} V(t,B)
-&= \frac{\partial}{\partial h} \left( a \sqrt{h} + b \sqrt{R(B - h)} \right) = 0 \\
+&= \frac{\partial}{\partial h} \left( a \sqrt{h} + b \sqrt{R(B - h)} \right) &= 0 \\
+\frac{a}{\sqrt{h}} = \frac{b
 h_{optimal} = \frac{a^2 B}{b^2 R + a^2}
 \end{align}$$
 
 
+For $V(1,B)$ er parameterene $a$ = $\rho$ og $b$ = $A_1$ . Dette gir $h_{optimal} = 
 
