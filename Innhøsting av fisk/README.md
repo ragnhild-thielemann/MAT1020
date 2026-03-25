@@ -161,9 +161,10 @@ Parameterene for den genrelle løsningen er da $a$ = 1 og $b$ = $A_2$ .
 Det gir løsningen for optimalt uttak det første året til 
 
 
-$$ \begin{align} h_{optimal} &= \frac{ B}{(A_2^2 R + 1} \\
-
+$$ 
+\begin{align} h_{optimal} &= \frac{ B}{(A_2^2 R + 1} \\
 V(B) &= \sqrt{1 + A_2^2 R}  \sqrt{B} $$
+
 
 ### Oppgave e)
 
@@ -171,7 +172,6 @@ B(3) vil være gitt ved
 
 
 $$\begin{align}
-
 B(3) &= R(B(2)-h(2)) \\
 &= R(R(B(1)-h(1))) \\
 &= R(R(R(B-h(0))) \end{align}$$
