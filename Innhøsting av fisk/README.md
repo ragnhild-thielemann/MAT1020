@@ -128,12 +128,12 @@ Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat fo
 $$
 \begin{align}
 V(B)
-&= a \sqrt{h_{optimal}} + b \sqrt{R(B - h_{optimal}} \\
-&= a \sqrt{\frac{a^2}{a^2 + b^2 R} B}
+= a \sqrt{h_{optimal}} + b \sqrt{R(B - h_{optimal}} \\
+= a \sqrt{\frac{a^2}{a^2 + b^2 R} B}
 + b \sqrt{R \cdot \frac{b^2 R B}{a^2 + b^2 R}} \\
-&= \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
+= \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
 + \frac{b^2 R}{\sqrt{a^2 + b^2 R}} \sqrt{B} \\
-&= \sqrt{a^2 + b^2 R}  \sqrt{B}
+= \sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}
 $$
 
@@ -147,8 +147,8 @@ For $V(1,B)$ er parameterene $a$ = $\rho$ og $b$ = $A_1$ . Dette gir
 
 $$
 \begin{align} 
-h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} 
-V(1,B) &= \sqrt{\rho^2 + A_1^2 R} \sqrt{B} 
+h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} \\ 
+V(1,B) &= \sqrt{\rho^2 + A_1^2 R} * \sqrt{B} 
 \end{align} $$
 
 
