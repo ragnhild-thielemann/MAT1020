@@ -1,5 +1,5 @@
 
-
+## Oppgave 1
 Vi  antar at vi fisker torsk, og at nyttefunksjonen er gitt ved $L(h) = \sqrt{h}$ (Kvadratfunksjonen gir en konkav funksjon, som henger sammen med avtakene marginalproduktivitet for nytten oppnådd). Vi skal fiske i to år av en bestand som nå består av $B$ torsk. Diskonteringsraten er $\rho$ < 1, mens torsken formerer seg med en faktor $R$ > 1. For å løse dette problemet bruker vi negativ induksjon, der begynner med verdien ved $t$ = 3, før vi regner oss nedover. 
 
 
@@ -117,9 +117,9 @@ $$\begin{align}
 V(t,B)_{optimal} &= a \sqrt{h} + b \sqrt{R(B-h)} \\
 \frac{\partial}{\partial h} V(t,B)
 &= \frac{\partial}{\partial h} \left( a \sqrt{h} + b \sqrt{R(B - h)} \right) &= 0 \\
-\frac{a}{\sqrt{h}} = \frac{b \sqrt{R}}{\sqrt{B-h}}
+\frac{a}{\sqrt{h}} &= \frac{b \sqrt{R}}{\sqrt{B-h}}
 \\
-h_{optimal} = \frac{a^2 B}{b^2 R + a^2}
+h_{optimal} &= \frac{a^2 B}{b^2 R + a^2}
 \end{align}$$
 
 Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat for den genrelle løsningen for parametererene $a$ og $b$ . Dette gir 
@@ -127,15 +127,8 @@ Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat fo
 
 $$
 \begin{align}
-V(B) &= a \sqrt{h_{\text{optimal}}} + b \sqrt{R\left(B - h_{\text{optimal}}\right)} \\
- a \sqrt{\frac{a^2}{a^2 + b^2 R} B}
-+ b \sqrt{R \cdot \frac{b^2 R B}{a^2 + b^2 R}} \\
- \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
-+ \frac{b^2 R}{\sqrt{a^2 + b^2 R}} \sqrt{B} \\
-\sqrt{a^2 + b^2 R}  \sqrt{B}
-\end{align}
-$$
-
+V(B) &= \sqrt{a^2 + b^2 R}  \sqrt{B}
+\end{align}$$
 
 
 Når vi har regnet den genrelle formelen, blir oppgaven med negativ induksjon mye lettere, da vi ender opp med like problemer, men at paramterene $a$ og $b$ endrer seg. 
@@ -150,6 +143,38 @@ $$
 h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} \\ 
 V(1,B) &= \sqrt{\rho^2 + A_1^2 R} * \sqrt{B} 
 \end{align} $$
+
+
+### Oppgave d)
+
+Når vi skal regne det optimale uttaket av  torsk ved det første året, har vi igjen et problem på formen 
+
+
+$$ \begin{align}
+V(0,B)_{optimal} = \sqrt{h(0)} + V(1,R(B(0)-h(0)) \\
+\sqrt{h} + A_{2} \sqrt{R(B-h)}
+\end{align} $$
+
+
+Parameterene for den genrelle løsningen er da $a$ = 1 og $b$ = $A_2$ . 
+
+Det gir løsningen for optimalt uttak det første året til 
+
+
+$$ \begin{align} h_{optimal} &= \frac{ B}{(A_2^2 R + 1} \\
+
+V(B) &= \sqrt{1 + A_2^2 R}  \sqrt{B} $$
+
+### Oppgave e)
+
+B(3) vil være gitt ved 
+
+
+$$\begin{align}
+
+B(3) &= R(B(2)-h(2)) \\
+&= R(R(B(1)-h(1))) \\
+&= R(R(R(B-h(0))) \end{align}$$
 
 
 
