@@ -4,9 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Definerer kovariansmatrisen
-C_123 = np.array([[0.0025,7.5*10**(-4),-1*10**(-3)],[7.5*10**(-4),0.00255,-1.5*10**(-3)],[-1*10**(-3),-1.5*10**(-3),0.01]])
-C_12 = np.array([[0.0025,7.5*10**(-4)],[7.5*10**(-4),0.00255]])#kovariasnmatrisen når markedet bare består av  to aksjer
-
+C_123 = np.array([[0.0025,7.5*10**(-4),-1*10**(-3)],
+                  [7.5*10**(-4),0.00255,-1.5*10**(-3)],
+                  [-1*10**(-3),-1.5*10**(-3),0.01]])
+C_12 = np.array([[0.0025,7.5*10**(-4)],
+                 [7.5*10**(-4),0.00255]])#kovariasnmatrisen når markedet bare består av  to aksjer
+print(C_12)
 #inverterer matrisen C
 invers_123 = np.linalg.inv(C_123)
 invers_12 = np.linalg.inv(C_12)
@@ -48,7 +51,6 @@ for r in [0.15,0.2,0.25]:
     print(f"Aksje 1: {(w_f[0]*100):.2f} %")
     print(f"Aksje 2: {(w_f[1]*100):.2f} %")
     print(f"Aksje 3: {(w_f[2]*100):.2f} %")
-    print("-")
 
 
 def sigma_3(r):
@@ -59,15 +61,39 @@ def sigma_2(r):
     w_f = w_2(r) #lager en optimal portefølge for hver ønskede avkastning
     return np.sqrt(w_f@C_12@w_f.T) #beregner risikoen ved hver enkelt portefølge, som må kvadreres
 
-
-r_verdier = np.linspace(-0.1,0.4,100) #løper gjennom avkasntinger fra -10% til 40%
+r_f = 0.2
+n = 100
+print(f"Med tre aksjer er risikoen {(sigma_3(r_f)):.3f} dersom man ønsker en avkastning på {r_f}")
+print(f"Med to aksjer er risikoen {(sigma_2(r_f)):.3f} dersom man ønsker en avkastning på {r_f}")
+print(f"Etikken gjør at risikoen øker med {((sigma_2(r_f))-(sigma_3(r_f))):.3f}")
+r_verdier = np.linspace(-0.1,0.5,n) #løper gjennom avkasntinger fra -10% til 40%
 v_verdier = np.array([sigma_3(r) for r in r_verdier])
 t_verdier = np.array([sigma_2(r) for r in r_verdier])
-plt.plot(t_verdier,r_verdier,label = "To aksjer")
+
+for i in range(int(n/2),n,1):
+    if float(v_verdier[i])>0.15:
+        tre = (r_verdier[i])
+        break
+
+for i in range(int(n/2),n,1):
+    if float(t_verdier[i])>0.15:
+        to = (r_verdier[i])
+        break
+
+
+print(f"Ved en tolerert risiko på {0.15} kan vi forvente en avkastning på")
+print(f"{(tre*100):.1f} % dersom vi investerer i tre akjser, mot {(to*100):.1f} % dersom vi utelukker aksje 3")
+print(f"Etikken begrenser altså forventet avkastning med {((tre-to)*100):.2f} %")
+print("Dette er en pris det er verdt å betale for å legge seg med god sanvittighet om kvelden")
+
+plt.plot(t_verdier,r_verdier,color = "skyblue" , label = "To aksjer")
 plt.plot(v_verdier,r_verdier,color = "hotpink",label = "Tre aksjer")
-plt.plot(0.05,0.1,"x",label = "Aksje 1", color = "yellow")
-plt.plot(0.15,0.2,"x",label = "Aksje 2",color = "green")
-plt.plot(0.1,0.2,"x",label = "Aksje 3",color = "black",)
+plt.plot(0.05, 0.1, "x", color="black")
+plt.text(0.05+0.005, 0.1+0.005, "Aksje 1")
+plt.plot(0.15, 0.2, "x", color="black")
+plt.text(0.15 + 0.005, 0.2 + 0.005, "Aksje 2")
+plt.plot(0.1 , 0.2 , "x", color="black")
+plt.text(0.1 + 0.005, 0.2, "Aksje 3")
 plt.xlabel("Risiko")
 plt.ylabel("Avkastning")
 plt.grid()
