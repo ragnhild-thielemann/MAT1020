@@ -1,6 +1,6 @@
 
 
-Vi  antar at vi fisker torsk, og at nyttefunksjonen er gitt ved $L(h) = \sqrt{h}$ . Vi skal fiske i to år av en bestand som nå består av $B$ torsk. Diskonteringsraten er $\rho$ < 1, mens torsken formerer seg med en faktor $R$ > 1. Vi skal fiske torsk som optimerer 
+Vi  antar at vi fisker torsk, og at nyttefunksjonen er gitt ved $L(h) = \sqrt{h}$ . Vi skal fiske i to år av en bestand som nå består av $B$ torsk. Diskonteringsraten er $\rho$ < 1, mens torsken formerer seg med en faktor $R$ > 1. For å løse dette problemet bruker vi negativ induksjon, der begynner med verdien ved $t$ = 3, før vi regner oss nedover. 
 
 
 Dynamikken til torskebetanden er gitt ved B(0) = B , B(1) = R(B-h(0)), B(2) = R(B(1)-h(1)) og B(3) = R(B(2)-h(2)) , altså en linjær formering. Vi  definerer nyttefunksjonen 
@@ -50,12 +50,29 @@ $$
 \frac{\rho^2}{2\sqrt{h}} 
 &= \frac{\rho^3 \sqrt{R}}{2\sqrt{B - h}} \\
 \frac{1}{\sqrt{h}} 
-&= \rho \frac{\sqrt{R}}{\sqrt{B - h}} \\[6pt]
+&= \rho \frac{\sqrt{R}}{\sqrt{B - h}} \\ 
 \frac{1}{h} 
 &= \frac{\rho^2 R}{B - h} \\
 B - h 
 &= \rho^2 R h \\
-h 
+h_{optimal}
 &= \frac{B}{1 + \rho^2 R}
 \end{align}
 $$
+
+
+Når vi setter dette inn i utrykket for $V(2,B)$ , og setter konstantene utenfor, slik at vi får en funksjon av B, får vi følgene
+
+
+$$
+\begin{align}
+V(2,B)_{optimal}
+&= \rho^2 \sqrt{\frac{B}{1 + \rho^2 R}
+\end{align}} + \rho^3 \sqrt{R(B(2)-\frac{B}{1 + \rho^2 R}
+\end{align})} \\ 
+&= \frac{\rho^2 + R \rho^4}{\sqrt{1+ \rho^2 R} \sqrt{B} \end{align} $$
+
+
+Dette gir oss et utrykk for optimal innhøsting andre året vi fisker etter torsk. 
+
+### Oppgave c) 
