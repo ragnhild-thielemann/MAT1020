@@ -124,6 +124,7 @@ h_{optimal} = \frac{a^2 B}{b^2 R + a^2}
 
 Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat for den genrelle løsningen for parametererene $a$ og $b$ . Dette gir 
 
+
 $$
 \begin{align}
 V(B)
@@ -135,6 +136,7 @@ V(B)
 &= \sqrt{a^2 + b^2 R} \, \sqrt{B}
 \end{align}
 $$
+
 
 Når vi har regnet den genrelle formelen, blir oppgaven med negativ induksjon mye lettere, da vi ender opp med like problemer, men at paramterene $a$ og $b$ endrer seg. 
 
