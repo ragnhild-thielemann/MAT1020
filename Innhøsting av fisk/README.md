@@ -133,7 +133,7 @@ V(B)
 + b \sqrt{R \cdot \frac{b^2 R B}{a^2 + b^2 R}} \\
 &= \frac{a^2}{\sqrt{a^2 + b^2 R}} \sqrt{B}
 + \frac{b^2 R}{\sqrt{a^2 + b^2 R}} \sqrt{B} \\
-&= \sqrt{a^2 + b^2 R} \, \sqrt{B}
+&= \sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}
 $$
 
@@ -144,12 +144,12 @@ Når vi har regnet den genrelle formelen, blir oppgaven med negativ induksjon my
 
 For $V(1,B)$ er parameterene $a$ = $\rho$ og $b$ = $A_1$ . Dette gir 
 
-$$\begin{align} 
+
+$$
+\begin{align} 
 h_{optimal} &= \frac{\rho^2 B}{A_1^2 R + \rho^2} \end{align} \\
-
-V(1,B) &= \sqrt{\rho^2 + A_1^2 R} \, \sqrt{B}
- $$
-
+V(1,B) &= \sqrt{\rho^2 + A_1^2 R} \, \sqrt{B} 
+\end{align} $$
 
 
 
