@@ -104,6 +104,7 @@ V(1,B)_{optimal} = \rho \sqrt{h(1)} + V(2,R(B(1)-h(1)) \\
 
 Vi løser nå den generelle problemstillingen for den negative induksjonen for optimal innhøsting etter tid $t$ .
 
+
 $$\begin{align} 
 V(t,B)_{optimal} = a \sqrt{h} + b \sqrt{R(B-h)} \\
 \frac{\partial}{\partial h} V(t,B)
