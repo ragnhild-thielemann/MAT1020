@@ -129,7 +129,6 @@ $$
 V(B) &= a \sqrt{h} + b \sqrt{R(B-h)} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{R(B-\frac{a^2 B}{b^2 R + a^2})} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{\frac{b^2 B R^2}{b^2 R + a^2}} \\ 
-\begin{align}
 V(B) &= \sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}$$
 
