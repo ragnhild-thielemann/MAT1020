@@ -126,7 +126,6 @@ Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat fo
 
 
 $$
-
 V(B) &= a \sqrt{h} + b \sqrt{R(B-h)} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{R(B-\frac{a^2 B}{b^2 R + a^2})} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{\frac{b^2 B R^2}{b^2 R + a^2}} \\ 
