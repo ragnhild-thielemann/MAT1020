@@ -1,10 +1,10 @@
 #%%
 
-B = 100
-R = 1.1
-p = 1/(1+0.05)
+import numpy as np
+from scipy import integrate
 
-h_2 = (B/(1+p**2*R))
+def f(u,r):
+    return r*np.sqrt(r**2 + np.sin(u)*2*r + 1)
 
-print(h_2)
-
+a = integrate.dblquad(f,0,1,0,2*np.pi)
+print(a)

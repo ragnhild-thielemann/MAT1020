@@ -126,6 +126,10 @@ Når vi setter inn $h_{optimal}$ som funksjonsverdi, får vi følgene resulat fo
 
 
 $$
+
+V(B) &= a \sqrt{h} + b \sqrt{R(B-h)} \\
+&= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{R(B-\frac{a^2 B}{b^2 R + a^2})} \\
+&= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{\frac{b^2 B R^2}{b^2 R + a^2}} \\ 
 \begin{align}
 V(B) &= \sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}$$
@@ -177,5 +181,12 @@ B(3) &= R(B(2)-h(2)) \\
 &= R(R(B(1)-h(1))) \\
 &= R(R(R(B-h(0))) \end{align}$$
 
+## Oppgave 2
 
+I oppgave 1 fant vi at den genrelle løsningen på det generelle probelmet for negativ induksjon var 
+
+
+$$ h_{optimal} &= \frac{a^2 B}{b^2 R + a^2} \\
+
+V(B) &= \sqrt{a^2 + b^2 R} \sqrt{B}
 
