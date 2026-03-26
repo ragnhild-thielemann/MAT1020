@@ -129,6 +129,7 @@ $$ \begin{align}
 V(B) &= a \sqrt{h} + b \sqrt{R(B-h)} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{R(B-\frac{a^2 B}{b^2 R + a^2})} \\
 &= a \sqrt{\frac{a^2 B}{b^2 R + a^2}} + b \sqrt{\frac{b^2 B R^2}{b^2 R + a^2}} \\ 
+&= \frac{a^2 \sqrt{B} + b^2 R \sqrt{B}}{\sqrt{b^2 R + a^2}} \\
 V(B) &= \sqrt{a^2 + b^2 R}  \sqrt{B}
 \end{align}$$
 
@@ -184,7 +185,29 @@ B(3) &= R(B(2)-h(2)) \\
 I oppgave 1 fant vi at den genrelle løsningen på det generelle probelmet for negativ induksjon var 
 
 
-$$ h_{optimal} &= \frac{a^2 B}{b^2 R + a^2} \\
+$$ \begin{align} h_{optimal} &= \frac{a^2 B}{b^2 R + a^2} \\
 
-V(B) &= \sqrt{a^2 + b^2 R} \sqrt{B}
+V(B) &= \sqrt{a^2 + b^2 R}  \end{align} $$
+
+
+Dermed kan vi sette inn konstantene fra oppgaven. 
+
+
+$$ \begin{align} 
+
+B(0) &= B &= 100 \\ R &= 1.1 \\ \rho &= frac{1}{1.05} \end{align} $$
+
+Vi finner den optimale innhøstingen, først gitt etter tre år. Dette er et optimeringsproblem på formen 
+
+
+$$ \begin{align} V(2,B(2)) &= \rho^2 \sqrt{h(2)} + V(3,R(B(2)-h(2)) \\
+&= a \sqrt{h} + b \sqrt{R(B-h)} 
+\end{align} $$
+
+
+Når vi setter inn de numeriske løsningene for det optimale uttaket får vi 
+
+
+$$ \begin{align} h_{optimal} &= \frac{(1.05^2)^2 *100}{(1.05^3)^2 1.1 + (1.05^2)^2} &= \end{align}$$
+
 
